@@ -43,9 +43,15 @@
 
 
 
-        const boxEl_1 = document.querySelector('.box:first-child');
+        // const boxEl_1 = document.querySelector('.box:first-child');
 
         boxEl_1.setAttribute('data-chicken',"nene");
+        // =>data-* 속성을 세팅해줌
+        // =>선택자.setAttribute('data-*', 값)
+        const getAttr = boxEl_1.getAttribute('data-chicken');
+        // =>세팅된 Attribute를 가져올 수 있음
+        // =>선택자.getAttribute('data-*')
+        console.log(getAttr);
 
     </script>
 
