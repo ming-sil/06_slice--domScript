@@ -6,7 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dom Script</title>
 
+    <style>
 
+        /* .box_3[data-pizza="domino"]{
+            font-size: 50px;
+        } */
+
+    </style>
 
 </head>
 <body>
@@ -14,6 +20,7 @@
     <div class="box">1</div>
     <div class="box">2</div>
     <div class="box">3</div>
+    <!-- <div class="box box_3" data-pizza="domino">3</div> -->
     
     <script>
 
@@ -28,12 +35,17 @@
         // const boxEl_2 = document.querySelector('.box:nth-child(2)')
         // console.log(boxEl_2)
 
-        const boxAll = document.querySelectorAll('.box');
-        // =>여러 클래스를 선택해올 수 있음
-        // =>단, 선택 시 배열형태로 반환시켜줌
-        console.log(boxAll[2]);
-        // =>원하는 선택자를 선택하고 싶을땐 배열 형식으로 선택해주면 됨
+        // const boxAll = document.querySelectorAll('.box');
+        // // =>여러 클래스를 선택해올 수 있음
+        // // =>단, 선택 시 배열형태로 반환시켜줌
+        // console.log(boxAll[2]);
+        // // =>원하는 선택자를 선택하고 싶을땐 배열 형식으로 선택해주면 됨
 
+
+
+        const boxEl_1 = document.querySelector('.box:first-child');
+
+        boxEl_1.setAttribute('data-chicken',"nene");
 
     </script>
 
