@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- 4개의 선택자에 data-id값 추가하기 -->
+    
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+
+    <script>
+
+        const boxAll = document.querySelectorAll('.box')
+
+        // boxAll[0].setAttribute('data-id', 1)
+        // boxAll[1].setAttribute('data-id', 2)
+        // boxAll[2].setAttribute('data-id', 3)
+        // boxAll[3].setAttribute('data-id', 4)
+        // console.log(boxAll)
+
+
+        for (let i = 0; i < 4; i++) {
+            boxAll[i].setAttribute('data-id', i + 1)
+        }
+
+    </script>
+
+</body>
+</html>
