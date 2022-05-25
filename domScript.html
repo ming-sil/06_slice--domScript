@@ -6,15 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dom Script</title>
 
-    <script>
 
-        *DOM(Document Object Model)
-        asdfadsf
-
-    </script>
 
 </head>
 <body>
+
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
     
+    <script>
+
+        // *DOM(Document Object Model) Script
+        // =>반드시 body 최 하단에 스크립트를 작성해야 원하는 선택자 선택가능
+
+        // const boxEl = document.querySelector('.box');
+        // // =>body내부에 있는 클래스, 아이디, 태그, 자식, 자손, 구조 선택자 등을 선택가능
+        // // =>중복되는 클래스명일 경우 첫번째 태그만 선택함
+        // console.log(boxEl);
+
+        const boxEl_2 = document.querySelector('.box:nth-child(2)')
+        console.log(boxEl_2)
+
+
+    </script>
+
 </body>
 </html>
