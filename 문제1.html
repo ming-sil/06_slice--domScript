@@ -16,17 +16,32 @@
     <div class="box">4</div>
 
     <script>
+// ==========풀이1==========================================================
+   
+        // const boxEl_1 = document.querySelector('.box:nth-child(1)');
+        // const boxEl_1 = document.querySelector('.box:nth-child(2)');
+        // const boxEl_1 = document.querySelector('.box:nth-child(3)');
+        // const boxEl_1 = document.querySelector('.box:nth-child(4)');
 
-        const boxAll = document.querySelectorAll('.box')
+        // boxEl_1.setAttribute('data-id',1);
+        // boxEl_2.setAttribute('data-id',2);
+        // boxEl_3.setAttribute('data-id',3);
+        // boxEl_4.setAttribute('data-id',4);
 
-        // boxAll[0].setAttribute('data-id', 1)
-        // boxAll[1].setAttribute('data-id', 2)
-        // boxAll[2].setAttribute('data-id', 3)
-        // boxAll[3].setAttribute('data-id', 4)
-        // console.log(boxAll)
+// ==========풀이2==========================================================
 
+        // const boxAll = document.querySelectorAll('.box');
 
-        for (let i = 0; i < 4; i++) {
+        // boxAll[0].setAttribute('data-id',1)
+        // boxAll[1].setAttribute('data-id',2)
+        // boxAll[2].setAttribute('data-id',3)
+        // boxAll[3].setAttribute('data-id',4)
+
+// ==========풀이3==========================================================
+
+        const boxAll = document.querySelectorAll('.box');
+
+        for (let i = 0; i < boxAll.length; i++) {
             boxAll[i].setAttribute('data-id', i + 1)
         }
 
